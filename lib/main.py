@@ -1,14 +1,4 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from models import Base, Audition, Role
 
-# Connect to the database
-engine = create_engine('sqlite:///theater.db')
-Base.metadata.bind = engine
-
-# Create a session to interact with the database
-DBSession = sessionmaker(bind=engine)
-session = DBSession()
 
 # Example usage
 if __name__ == "__main__":
