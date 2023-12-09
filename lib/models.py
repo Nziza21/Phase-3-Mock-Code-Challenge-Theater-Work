@@ -1,11 +1,4 @@
-from sqlalchemy import create_engine, Column, Integer, String, Boolean, ForeignKey
-from sqlalchemy.orm import relationship, backref, declarative_base
-from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
-
-class Audition(Base):
-    __tablename__ = 'auditions'
 
     id = Column(Integer, primary_key=True)
     actor = Column(String)
